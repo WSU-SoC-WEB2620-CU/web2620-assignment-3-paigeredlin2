@@ -1,1 +1,161 @@
-// Your styles go here
+:root{
+    box-sizing: border-box;
+}
+*, ::before, ::after{
+    box-sizing: inherit;
+}
+body{
+    width: 100%;
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    gap: 10px;
+
+    grid-template-areas:
+    "box1 box1"
+    "box1 box1"
+    "box2 box2"
+    "box3 box3"
+    "box4 box4"
+    "box5 box5"
+    "box6 box6"
+    "box7 box7"
+    "box7 box7"
+    "box7 box7"
+    "box7 box7"
+    "box8 box10"
+    "box8 box10"
+    "box9 box10"
+    "box9 box10"
+    "box11 box10"
+    "box11 box10"
+    "box12 box10"
+    "box12 box10"
+    "box13 box13"
+    "box13 box13";
+}
+.box1{
+    background-color: aqua;
+    grid-area: box1;
+    width: 100%;
+    height: 100%;
+}
+.box2{
+    background-color: black;
+    grid-area: box2;
+    width: 100%;
+    height: 100%;
+}
+.box3{
+    background-color: black;
+    grid-area: box3;
+    width: 100%;
+    height: 100%;
+}
+.box4{
+    background-color: black;
+    grid-area: box4;
+    width: 100%;
+    height: 100%;
+}
+.box5{
+    background-color: black;
+    grid-area: box5;
+    width: 100%;
+    height: 100%;
+}
+.box6{
+    background-color: black;
+    grid-area: box6;
+    width: 100%;
+    height: 100%;
+}
+.box7{
+    background-color: aqua; 
+    grid-area: box7;  
+    width: 100%;
+    height: 100%;
+}
+.box8{
+    background-color: black;
+    grid-area: box8;
+    width: 100%;
+    height: 100%;
+}
+.box9{
+    background-color: black;
+    grid-area: box9;
+    width: 100%;
+    height: 100%;
+}
+.box10{
+    background-color: aqua;
+    grid-area: box10;
+    width: 100%;
+    height: 100%;
+}
+.box11{
+    background-color: black;
+    grid-area: box11;
+    width: 100%;
+    height: 100%;
+}
+.box12{
+    background-color: black;
+    grid-area: box12;
+    width: 100%;
+    height: 100%;
+}
+.box13{
+    background-color: aqua;
+    grid-area: box13;
+    width: 100%;
+    height: 100%;
+}
+
+@media all and (min-width: 501px){
+    .container{
+        width: 100%;
+        height: 100vh;
+        gap: 20px;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "box1 box1 box1 box1 box1 box1 box1 box1 box1 box1"
+        "box2 box2 box3 box3 box4 box4 box5 box5 box6 box6"
+        "box7 box7 box7 box7 box7 box7 box7 box7 box7 box7"
+        "box7 box7 box7 box7 box7 box7 box7 box7 box7 box7"
+        "box7 box7 box7 box7 box7 box7 box7 box7 box7 box7"
+        "box7 box7 box7 box7 box7 box7 box7 box7 box7 box7"
+        "box7 box7 box7 box7 box7 box7 box7 box7 box7 box7"
+        "box7 box7 box7 box7 box7 box7 box7 box7 box7 box7"
+        "box8 box8 box8 box9 box9 box9 box10 box10 box10 box10"
+        "box8 box8 box8 box9 box9 box9 box10 box10 box10 box10"
+        "box11 box11 box11 box12 box12 box12 box10 box10 box10 box10"
+        "box11 box11 box11 box12 box12 box12 box10 box10 box10 box10"
+        "box13 box13 box13 box13 box13 box13 box13 box13 box13 box13";
+    }
+    
+}
+@media all and (min-width: 800px){
+    .container{
+        grid-template-areas: 
+        "box1 box1 box1 box1 box1 box1 box1 box1 box1 box1"
+        "box2 box2 box3 box3 box4 box4 box5 box5 box6 box6"
+        "box7 box7 box7 box7 box7 box7 box10 box10 box10 box10"
+        "box7 box7 box7 box7 box7 box7 box10 box10 box10 box10"
+        "box7 box7 box7 box7 box7 box7 box10 box10 box10 box10"
+        "box7 box7 box7 box7 box7 box7 box10 box10 box10 box10"
+        "box7 box7 box7 box7 box7 box7 box10 box10 box10 box10"
+        "box7 box7 box7 box7 box7 box7 box8 box8 box9 box9"
+        "box7 box7 box7 box7 box7 box7 box8 box8 box9 box9"
+        "box7 box7 box7 box7 box7 box7 box11 box11 box12 box12"
+        "box7 box7 box7 box7 box7 box7 box11 box11 box12 box12"
+        "box13 box13 box13 box13 box13 box13 box13 box13 box13 box13";
+    }
+}
